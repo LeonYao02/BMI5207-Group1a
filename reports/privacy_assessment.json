@@ -1,0 +1,28 @@
+{
+  "population": "five supplied synthetic people, not 170 event rows",
+  "analysis_scope": "Illustrative demographic QIs in the input; not a final linked release view",
+  "birth_year_plus_sex": {
+    "equivalence_class_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "observed_minimum_k": 1
+  },
+  "birth_decade_plus_sex": {
+    "equivalence_class_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "observed_minimum_k": 1
+  },
+  "full_anonymity_claimed": false,
+  "l_diversity_claimed": false,
+  "k_map_delta_presence_estimated": false,
+  "limitation": "No external population, gold-standard PHI labels or final joined release supplied; no general anonymity or F1 estimate."
+}

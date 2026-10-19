@@ -1,0 +1,9 @@
+{
+  "cdm_version": "5.4",
+  "expected_patients": 5,
+  "drug_type_concept_id": 32838,
+  "date_shift_max_days": 180,
+  "drug_end_date_policy": "themis_prescription_30_days",
+  "drug_end_date_inference_days": 30,
+  "release_status": "pseudonymised_synthetic_coursework_requires_review"
+}

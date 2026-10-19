@@ -1,0 +1,3 @@
+source_concept_id,source_concept_name,relationship_observed,target_concept_id,target_concept_name,verified_on,athena_source_url
+36822711,CANDESARTAN CILEXETIL,Non-standard to Standard map (OMOP),1351557,candesartan,2026-10-19,https://athena.ohdsi.org/search-terms/terms/36822711
+37487157,Bisoprolol Fumarate,Non-standard to Standard map (OMOP),1338005,bisoprolol,2026-10-19,https://athena.ohdsi.org/search-terms/terms/37487157

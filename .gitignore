@@ -1,0 +1,14 @@
+# Source records, linkage secrets, and local outputs must stay off GitHub.
+/data/
+/private/
+/outputs/
+/sample_patient2/
+/vocabulary/
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.xlsx
+*.xls
+*.zip

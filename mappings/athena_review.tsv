@@ -1,0 +1,68 @@
+concept_id	concept_code	concept_name	concept_class_id	standard_label	validity_label	domain_id	vocabulary_id
+1713694	617296	amoxicillin 500 MG / clavulanate 125 MG Oral Tablet	Clinical Drug	Standard	Valid	Drug	RxNorm
+19078555	311034	insulin, regular, human 100 UNT/ML Injectable Solution	Clinical Drug	Standard	Valid	Drug	RxNorm
+19079524	313002	sodium chloride 9 MG/ML Injectable Solution	Clinical Drug	Standard	Valid	Drug	RxNorm
+19107567	432703	diosmin 450 MG / hesperidin 50 MG Oral Tablet	Clinical Drug	Standard	Valid	Drug	RxNorm
+19135536	849329	tramadol hydrochloride 50 MG/ML Injectable Solution	Clinical Drug	Standard	Valid	Drug	RxNorm
+21160118	OMOP355070	Amoxicillin 1000 MG / Clavulanate 200 MG Injection	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+21161812	OMOP385419	Omeprazole 40 MG Injection	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+21337884	3394111000001104	Generic Resource Fruit liquid	VMP	Standard	Valid	Device	dm+d
+21339669	17832711000001105	QV Gentle wash	AMP	Standard	Valid	Device	dm+d
+21380480	17076511000001101	Cetaphil moisturising cream	AMP	Standard	Valid	Device	dm+d
+21400144	13330711000001103	Fresubin Protein Energy drink tropical fruits	AMP	Standard	Valid	Device	dm+d
+21420509	11782611000001106	QV cream	AMP	Standard	Valid	Device	dm+d
+35603389	1668238	azithromycin 500 MG Injection	Clinical Drug	Standard	Valid	Drug	RxNorm
+35869488	OMOP5026278	ketoprofen Medicated Patch	Clinical Drug Form	Standard	Valid	Drug	RxNorm Extension
+36249702	1795345	glucose 50 MG/ML / sodium chloride 9 MG/ML Injection	Clinical Drug	Standard	Valid	Drug	RxNorm
+36880979	OMOP998470	Metoclopramide 5 MG/ML Injectable Solution	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+40000823	372643	loratadine Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40005746	369097	acetaminophen Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40008978	370573	amlodipine Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40009896	370611	aspirin Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40015063	371086	bisacodyl Rectal Suppository	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40015379	371104	bisoprolol Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40017174	379310	benzydamine Mouthwash	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40018337	377624	calamine Topical Lotion	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40023993	371447	chlorpheniramine Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40024792	371392	chlorhexidine Topical Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40029854	375719	codeine / promethazine Oral Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40033902	371834	digoxin Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40040337	372281	furosemide Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40042337	372007	enalapril Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40045756	370635	hydrochlorothiazide Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40051138	378092	lactulose Oral Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40051982	370659	hydroxyzine Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40056894	372196	fexofenadine Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40061479	372886	metoclopramide Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40063181	372696	magnesium sulfate Injectable Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40063354	372803	metformin Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40066277	484332	mometasone Nasal Spray	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40075734	373524	potassium chloride Extended Release Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40075755	152997	potassium chloride Injectable Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40081553	373859	sennosides, USP Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40083920	373888	simvastatin Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40084973	373946	spironolactone Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40090252	374173	tramadol Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40092670	373449	vitamin K1 Injectable Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40093132	374319	warfarin Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40095247	370621	atorvastatin Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40095732	371247	candesartan Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40101319	375234	potassium citrate Oral Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40101320	373528	potassium citrate Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40130136	608594	tamsulosin Extended Release Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40144024	744485	fluticasone / salmeterol Metered Dose Inhaler	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40163727	855811	prasugrel Oral Tablet	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40165020	861463	meperidine hydrochloride 50 MG/ML Injectable Solution	Clinical Drug	Standard	Valid	Drug	RxNorm
+40166953	876077	calcium chloride / lactate / potassium chloride / sodium chloride Injectable Solution	Clinical Drug Form	Standard	Valid	Drug	RxNorm
+40220389	1808220	propofol 10 MG/ML Injection	Clinical Drug	Standard	Valid	Drug	RxNorm
+42483384	OMOP417257	Fentanyl 0.05 MG/ML Injectable Solution	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+43167453	OMOP443579	Fenoterol 0.05 MG / Ipratropium 0.02 MG Inhalant Solution	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+43262567	OMOP545123	Bromhexine 0.8 MG/ML / pholcodine 1 MG/ML Oral Solution	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+43787221	OMOP901043	Omeprazole Oral Capsule	Clinical Drug Form	Standard	Valid	Drug	RxNorm Extension
+44071289	OMOP1065920	Norepinephrine 1 MG/ML Injectable Solution	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+44123365	OMOP1117996	fluticasone 0.125 MG / salmeterol 0.025 MG Metered Dose Inhaler	Clinical Drug	Standard	Valid	Drug	RxNorm Extension
+46275444	1659149	piperacillin 4000 MG / tazobactam 500 MG Injection	Clinical Drug	Standard	Valid	Drug	RxNorm
+46275516	1659283	ceftazidime 1000 MG Injection	Clinical Drug	Standard	Valid	Drug	RxNorm
+46287338	1665050	cefazolin 1000 MG Injection	Clinical Drug	Standard	Valid	Drug	RxNorm
+4223728	346447007	Fresh frozen plasma	Pharma/Biol Product	Standard	Valid	Device	SNOMED
+1110410	7052	morphine	Ingredient	Standard	Valid	Drug	RxNorm

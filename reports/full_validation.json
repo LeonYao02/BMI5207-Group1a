@@ -1,0 +1,76 @@
+{
+  "cdm_version": "5.4",
+  "expected_patients": 5,
+  "id_scheme": "hmac-sha256-int31-v2",
+  "patients_in_available_sources": 5,
+  "patients_with_medication_records": 5,
+  "coverage_complete": true,
+  "all_five_patients_completed": true,
+  "source_medication_rows": 170,
+  "output_drug_exposure_rows": 158,
+  "unique_source_drug_descriptions": 74,
+  "mapped_drug_rows": 152,
+  "unmapped_drug_rows": 6,
+  "cross_domain_handoff_rows": 12,
+  "source_orders_accounted_for": 170,
+  "handoff_rows_with_standard_device_target": 9,
+  "handoff_rows_awaiting_exact_product_target": 3,
+  "mapping_status_by_unique_description": {
+    "cross_domain_handoff": 8,
+    "mapped": 63,
+    "reviewed_unmapped": 3
+  },
+  "all_orders_have_nonzero_target": false,
+  "rows_dropped": 0,
+  "exact_duplicate_visit_rows_collapsed_in_registry": 1,
+  "unique_registered_visits": 21,
+  "checks": {
+    "unique_event_ids": true,
+    "record_count_reconciled": true,
+    "nonzero_drug_concepts_standard_and_verified": true,
+    "shared_person_ids_used": true
+  },
+  "warnings_by_code": {
+    "cross_domain_handoff": 12,
+    "dose_excel_date_corruption": 2,
+    "dose_form_requires_review": 1,
+    "dose_range_retained": 1,
+    "duration_unknown_default_30_days": 158,
+    "exact_duplicate_retained": 17,
+    "inferred_end_after_discharge": 158,
+    "order_before_recorded_admission": 20,
+    "order_not_administration": 170,
+    "reviewed_unmapped": 6,
+    "same_time_different_dose_retained": 22,
+    "unit_not_mass_standardized": 64,
+    "volume_only_not_mass": 3
+  },
+  "privacy_status": "pseudonymised_synthetic_coursework_requires_review",
+  "full_anonymity_claimed": false,
+  "duration_policy": "themis_prescription_30_days",
+  "duration_is_observed": false,
+  "vocabulary_metadata_sha256": "3c68b57eec5590d878faf2b32b6bebf38949bbf4433207eb2b229f744ec3f901",
+  "mapping_sha256": "b28c1f609f493437e565df6c5d36295837d4b1a93360033b76c8b61e06a5ac77",
+  "source_rows_with_unlinked_case_by_domain": {
+    "lab": 162
+  },
+  "unit_tests_passed": 14,
+  "actual_output_validation": {
+    "order_accounting": "passed",
+    "id_uniqueness_and_int32_range": "passed",
+    "person_and_visit_registry_links": "passed",
+    "nonzero_concept_domain_and_status": "passed",
+    "unobserved_values_not_fabricated": "passed",
+    "rows_checked": 170,
+    "limitation": "Checks registry links, not yet the other members' PERSON/VISIT tables; no full OHDSI DQD claim."
+  },
+  "source_table_count": 25,
+  "all_source_row_counts": {
+    "procedure": 7,
+    "medication": 170,
+    "person": 5,
+    "lab": 162,
+    "visit": 22
+  },
+  "raw_excel_unchanged_against_uploaded_zip": true
+}

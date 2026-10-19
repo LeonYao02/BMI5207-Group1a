@@ -1,0 +1,26 @@
+source_field,OMOP_or_companion_field,rule
+Patient_No,DRUG_EXPOSURE.person_id,Shared keyed pseudonymous integer; original identifier stays private
+Case_No,DRUG_EXPOSURE.visit_occurrence_id,Exact patient and case match against visit source; missing optional FK stays blank
+Order_Creation_Date,DRUG_EXPOSURE.drug_exposure_start_date,Shared patient date offset; preserve date and available time
+Order_Creation_Date,DRUG_EXPOSURE.drug_exposure_start_datetime,Shared patient date offset; denotes order rather than observed administration
+Cluster_Preferred_Name_Code,DRUG_EXPOSURE.drug_source_value,Preserve local drug code
+Cluster_Preferred_Name_Description,medication_details.source_name,Preserve source drug name and use code/name/form mapping key
+Order_Text,medication_details.order_text,Preserve source product/brand text after identifier-leak check
+Medication_Order_Component_Text,source_name fallback,Use only when preferred source name is blank
+Dosage_Ordered,medication_details.dose_original,Preserve ordered dose; not product strength or tablet count
+Dosage_Ordered_Unit,medication_details.dose_unit_original,Preserve original dose unit
+Dosage_Ordered_Unit,DRUG_EXPOSURE.dose_unit_source_value,Preserve verbatim dose unit
+Dosage_Ordered plus unit,medication_details.dose_normalized,Convert g and micrograms to mg using Decimal arithmetic
+Dosage_Form,medication_details.dose_form_source,Retain source form without inferring a route
+Strength_Unit,medication_details.strength_unit_source,Retain source unit; no strength value is inferred
+Component_Type_Code plus description,source interpretation,Source MED identifies a medication component; not an administration type concept
+No source equivalent,DRUG_EXPOSURE.drug_exposure_id,Unique keyed event identifier
+Verified Athena mapping,DRUG_EXPOSURE.drug_concept_id,Use a valid Standard Drug concept
+Source provenance,DRUG_EXPOSURE.drug_type_concept_id,Verified Standard EHR prescription type
+No source end date,DRUG_EXPOSURE.drug_exposure_end_date,Infer start plus 29 days under documented THEMIS written-prescription rule
+No source instructions,DRUG_EXPOSURE.sig,Blank; do not invent a verbatim instruction
+No source quantity,DRUG_EXPOSURE.quantity,Blank; ordered mg is not number of tablets
+No source days supply,DRUG_EXPOSURE.days_supply,Blank even when end date is inferred
+No source route,DRUG_EXPOSURE.route_concept_id,0 for unknown
+No OMOP code for local source system,DRUG_EXPOSURE.drug_source_concept_id,0
+Reviewed standard Device domain,cross_domain_handoff (project table),Retain source order without asserting actual use/transfusion; never put Device ID in drug_concept_id
