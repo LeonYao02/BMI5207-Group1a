@@ -75,3 +75,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 46275444,piperacillin 4000 MG / tazobactam 500 MG Injection,Drug,RxNorm,Clinical Drug,S,,1659149,2026-10-19,https://athena.ohdsi.org/search-terms/terms/46275444,Live Athena rendered result: Standard; Valid; domain and vocabulary recorded; see athena_review.tsv
 46275516,ceftazidime 1000 MG Injection,Drug,RxNorm,Clinical Drug,S,,1659283,2026-10-19,https://athena.ohdsi.org/search-terms/terms/46275516,Live Athena rendered result: Standard; Valid; domain and vocabulary recorded; see athena_review.tsv
 46287338,cefazolin 1000 MG Injection,Drug,RxNorm,Clinical Drug,S,,1665050,2026-10-19,https://athena.ohdsi.org/search-terms/terms/46287338,Live Athena rendered result: Standard; Valid; domain and vocabulary recorded; see athena_review.tsv
+8507,MALE,Gender,Gender,Gender,S,,M,2026-10-22,https://athena.ohdsi.org/search-terms/terms/8507,Live Athena concept API: Standard and Valid
+8532,FEMALE,Gender,Gender,Gender,S,,F,2026-10-22,https://athena.ohdsi.org/search-terms/terms/8532,Live Athena concept API: Standard and Valid
+38003579,Chinese,Race,Race,Race,S,,2.06,2026-10-22,https://athena.ohdsi.org/search-terms/terms/38003579,Live Athena concept API: Standard and Valid
+32817,EHR,Type Concept,Type Concept,Type Concept,S,,OMOP4976890,2026-10-22,https://athena.ohdsi.org/search-terms/terms/32817,Live Athena concept API: Standard and Valid

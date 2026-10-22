@@ -24,3 +24,12 @@ No source days supply,DRUG_EXPOSURE.days_supply,Blank even when end date is infe
 No source route,DRUG_EXPOSURE.route_concept_id,0 for unknown
 No OMOP code for local source system,DRUG_EXPOSURE.drug_source_concept_id,0
 Reviewed standard Device domain,cross_domain_handoff (project table),Retain source order without asserting actual use/transfusion; never put Device ID in drug_concept_id
+Patient_No,PERSON.person_id,Shared keyed pseudonymous integer; same value in every domain
+Patient_DOB,PERSON.year_of_birth,Year-only source kept unshifted; month/day/birth_datetime blank; top-coded at age 90
+Gender,PERSON.gender_concept_id,Male 8507 / Female 8532 via mappings/demographics.csv; source text in gender_source_value
+Race,PERSON.race_concept_id,Chinese 38003579 via mappings/demographics.csv; source text in race_source_value
+(none),PERSON.ethnicity_concept_id,0; source has no Hispanic/Latino field and ethnicity is not inferred
+Religion,(suppressed),Sensitive; not needed; no PERSON field
+Marital_Status,(suppressed),Quasi-identifier; not needed; no PERSON field
+Deceased_Ind + Death_Date,DEATH.death_date,Year-only; imputed 1 July then shifted with patient offset; year preserved
+(none),DEATH.death_type_concept_id,32817 EHR

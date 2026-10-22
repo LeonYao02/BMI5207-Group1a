@@ -82,3 +82,14 @@ must assess all tables together; no k-anonymity or l-diversity guarantee is clai
 - This package does not populate PERSON, VISIT_OCCURRENCE, MEASUREMENT or
   PROCEDURE_OCCURRENCE. Their owners must import the shared registries/functions,
   then run cross-domain foreign-key checks after combining their actual CDM tables.
+
+## PERSON, DEATH and anonymisation staging (Person 1, added 2026-10-22)
+
+- `scripts/etl_person.py` uses the same shared functions and key. It verifies, and never
+  overwrites, an existing `private/person_registry.csv`. A mismatch means a wrong key.
+- Year-only `Death_Date` is imputed to 1 July and then shifted. With a shift of at most
+  180 days the death year never changes. Every DEATH row is flagged as imputed.
+- `outputs/anonymised/` provides pseudonymised copies of every source domain.
+  `visit_occurrence_id` is filled only for an exact visit-source match; `case_group_id`
+  groups rows from the same source Case_No, such as the lab-only episodes.
+- Suppressed in the staging copies: Religion, Marital_Status, ward/bed class fields, Order_Text.

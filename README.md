@@ -39,6 +39,38 @@ The actual run uses the existing private group key. `init-key` is available only
 for a deliberate new project whose outputs will all be regenerated. Parent-folder
 layout does not change IDs; source filenames, sheet names and row positions do.
 
+## Person 1 — Anonymisation + Demographics (PERSON / DEATH)
+
+`scripts/etl_person.py` pseudonymises **all five source domains** with the shared
+key (person_id, visit/case IDs, one date offset per patient) and builds CDM 5.4
+`PERSON` and `DEATH`. Other members can build their tables from
+`outputs/anonymised/*_anonymised.csv` instead of the raw Excel files.
+
+```bash
+python scripts/etl_person.py run \
+  --input "$HOME/Downloads/Sample data for 5 patients_v2"
+```
+
+| Result | Count |
+|---|---:|
+| PERSON / DEATH rows | 5 / 2 |
+| Source rows pseudonymised (person, visit, lab, medication, procedure) | 5, 22, 162, 170, 7 |
+| Lab rows whose Case_No is absent from the visit source (FK blank) | 162 |
+| Concepts | 8507 MALE, 8532 FEMALE, 38003579 Chinese, 32817 EHR |
+
+Rules, field-by-field decisions and the risk statement are in
+`docs/anonymisation_person_methods.md`. Aggregate validation is in `reports/person_validation.md`.
+
+## Note on the published group key (coursework only)
+
+The group key (`group_key.hex`) is shared openly for this coursework so that
+markers and group members can reproduce every output from the supplied synthetic
+dataset. This is a deliberate exception for an assignment, not a recommended
+practice. In a real deployment the key, the ID crosswalks and the date offsets
+would be held by a data custodian under access control, never published, and
+rotated if exposed. Anyone holding both the key and the raw extract can reverse
+the pseudonyms, so the published outputs here must not be treated as anonymised.
+
 ## Files to open
 
 - `docs/PERSON4_GUIDE_ZH.md`: Chinese explanation and lecture-linked viva questions.
@@ -62,6 +94,9 @@ layout does not change IDs; source filenames, sheet names and row positions do.
 | `private/person_registry.csv`, `visit_registry.csv` | Shared linkage registries; never publish |
 | `private/drug_lineage.csv` | Source file/sheet/row trace and original corrupt dose; never publish |
 | `private/group_key.hex` | Shared secret; never publish |
+| `outputs/person/person.csv`, `death.csv` | CDM 5.4 PERSON (18 columns) and DEATH (7 columns) |
+| `outputs/anonymised/*_anonymised.csv` | Pseudonymised, date-shifted staging copies of all five source domains |
+| `private/case_registry.csv` | Every Patient_No/Case_No pair, its case_group_id and source domains; never publish |
 
 ## Interpretation limits
 

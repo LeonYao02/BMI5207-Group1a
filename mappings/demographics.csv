@@ -1,0 +1,5 @@
+field,source_value,target_concept_id,target_concept_name,mapping_notes
+gender,Male,8507,MALE,OMOP Gender vocabulary; Standard
+gender,Female,8532,FEMALE,OMOP Gender vocabulary; Standard
+race,Chinese,38003579,Chinese,Race vocabulary code 2.06 (child of 8515 Asian); Standard
+ethnicity,,0,No matching concept,Source has no Hispanic/Latino field; OMOP ethnicity is not inferred from race
