@@ -93,7 +93,7 @@ the pseudonyms, so the published outputs here must not be treated as anonymised.
 | `outputs/medications/patient_summary.csv` | Pseudonymous per-person reconciliation |
 | `private/person_registry.csv`, `visit_registry.csv` | Shared linkage registries; never publish |
 | `private/drug_lineage.csv` | Source file/sheet/row trace and original corrupt dose; never publish |
-| `private/group_key.hex` | Shared secret; never publish |
+| `private/group_key.hex` | Shared secret; published for this coursework only (see the note above) |
 | `outputs/person/person.csv`, `death.csv` | CDM 5.4 PERSON (18 columns) and DEATH (7 columns) |
 | `outputs/anonymised/*_anonymised.csv` | Pseudonymised, date-shifted staging copies of all five source domains |
 | `private/case_registry.csv` | Every Patient_No/Case_No pair, its case_group_id and source domains; never publish |
